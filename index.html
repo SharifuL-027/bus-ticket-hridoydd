@@ -45,5 +45,46 @@
         <button class="bg-green-100 border border-green-200 text-primary px-6 py-3 rounded-xl font-bold flex items-center gap-2 hover:bg-green-200 transition">
             Bus <i class="fa-solid fa-van-shuttle"></i>
         </button>
-    </nav>    
+    </nav> 
+    <header class="container mx-auto px-4 mb-24 relative">
+        <div class="bg-[url('https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?q=80&w=1920&auto=format&fit=crop')] bg-cover bg-center h-[550px] rounded-[32px] relative flex flex-col justify-center items-center text-center text-white overflow-hidden">
+            <div class="absolute inset-0 bg-black/40"></div>
+            <div class="relative z-10 max-w-2xl px-4">
+                <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">
+                    End-to-End Travel with <br> 
+                    <span class="text-primary">P Paribahan</span>
+                </h1>
+                <p class="text-gray-200 mb-8 max-w-xl mx-auto">
+                    Travel safely and comfortably with the best bus service in the country. Book your tickets easily from home.
+                </p>
+                <button onclick="document.getElementById('booking-section').scrollIntoView({behavior: 'smooth'})" class="bg-primary text-black font-bold px-8 py-4 rounded-xl text-lg hover:bg-green-600 transition">
+                    Buy Tickets
+                </button>
+            </div>
+        </div>
+
+        <div class="flex flex-col md:flex-row gap-6 justify-center absolute -bottom-16 left-0 right-0 px-4 pointer-events-none">
+            <div class="bg-white p-6 rounded-2xl shadow-lg border-b-4 border-primary flex items-center gap-4 min-w-[250px] pointer-events-auto">
+                <div class="text-4xl text-primary"><i class="fa-solid fa-users"></i></div>
+                <div>
+                    <h3 class="text-3xl font-bold brand-font">500K+</h3>
+                    <p class="text-gray-500">Registered users</p>
+                </div>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-lg border-b-4 border-primary flex items-center gap-4 min-w-[250px] pointer-events-auto">
+                <div class="text-4xl text-primary"><i class="fa-solid fa-ticket"></i></div>
+                <div>
+                    <h3 class="text-3xl font-bold brand-font">1.7 lacks</h3>
+                    <p class="text-gray-500">Tickets sold</p>
+                </div>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-lg border-b-4 border-primary flex items-center gap-4 min-w-[250px] pointer-events-auto">
+                <div class="text-4xl text-primary"><i class="fa-solid fa-handshake"></i></div>
+                <div>
+                    <h3 class="text-3xl font-bold brand-font">80K+</h3>
+                    <p class="text-gray-500">Rental partners</p>
+                </div>
+            </div>
+        </div>
+    </header>   
     </body>
