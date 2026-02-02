@@ -105,3 +105,13 @@ function hideCouponSection() {
 function validateForm() {
     const phone = phoneNumberInput.value;
     const hasSeats = selectedSeats.length > 0;
+    if (hasSeats && phone.length > 0) {
+        nextBtn.removeAttribute('disabled');
+        nextBtn.classList.remove('bg-gray-300', 'cursor-not-allowed');
+        nextBtn.classList.add('bg-[#1DD100]', 'cursor-pointer');
+    } else {
+        nextBtn.setAttribute('disabled', true);
+        nextBtn.classList.add('bg-gray-300', 'cursor-not-allowed');
+        nextBtn.classList.remove('bg-[#1DD100]', 'cursor-pointer');
+    }
+}
