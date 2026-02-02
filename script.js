@@ -59,4 +59,11 @@ function selectSeat(seatId) {
     seatBtn.classList.add('bg-[#1DD100]', 'text-white');
     seatBtn.classList.remove('bg-gray-100');
     selectedSeats.push(seatId);
+    const row = document.createElement('tr');
+    row.id = `cart-item-${seatId}`;
+    row.innerHTML = `
+        <td class="py-2">${seatId}</td>
+        <td class="py-2">Economy</td>
+        <td class="py-2 text-right">${ticketPrice}</td>
+    `;
 }
