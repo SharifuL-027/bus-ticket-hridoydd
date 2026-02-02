@@ -99,3 +99,6 @@ function updateSummary() {
 function updateGrandTotal(amount) {
     grandTotalEl.innerText = amount;
 }
+function hideCouponSection() {
+    document.getElementById('coupon-container').classList.add('hidden');
+}
