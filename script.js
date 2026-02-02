@@ -46,3 +46,11 @@ applyBtn.addEventListener('click', function() {
         alert("Invalid Coupon Code");
     }
 });
+phoneNumberInput.addEventListener('keyup', function(e) {
+    validateForm();
+});
+
+
+nextBtn.addEventListener('click', function() {
+    successModal.showModal();
+});
