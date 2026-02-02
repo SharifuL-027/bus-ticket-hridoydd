@@ -81,3 +81,12 @@ function removeSeat(seatId) {
 
     updateSummary();
 }
+function updateSummary() {
+    const count = selectedSeats.length;
+    selectedSeatCountEl.innerText = count;
+    seatsLeftEl.innerText = 40 - count;
+
+    const total = count * ticketPrice;
+    totalPriceEl.innerText = total;
+    grandTotalEl.innerText = total;
+}
