@@ -69,3 +69,15 @@ function selectSeat(seatId) {
     cartItemsContainer.appendChild(row);
     updateSummary();
 }
+function removeSeat(seatId) {
+    const seatBtn = document.getElementById(seatId);
+
+    seatBtn.classList.remove('bg-[#1DD100]', 'text-white');
+    seatBtn.classList.add('bg-gray-100');
+
+    selectedSeats = selectedSeats.filter(id => id !== seatId);
+    const row = document.getElementById(`cart-item-${seatId}`);
+    if(row) row.remove();
+
+    updateSummary();
+}
