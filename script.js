@@ -30,3 +30,19 @@ for (const seat of allSeats) {
         selectSeat(seat.id);
     });
 }
+applyBtn.addEventListener('click', function() {
+    const code = couponInput.value;
+    const currentTotal = parseInt(totalPriceEl.innerText);
+    
+    if (code === "NEW15") {
+        const discount = currentTotal * 0.15;
+        updateGrandTotal(currentTotal - discount);
+        hideCouponSection();
+    } else if (code === "Couple 20") {
+        const discount = currentTotal * 0.20;
+        updateGrandTotal(currentTotal - discount);
+        hideCouponSection();
+    } else {
+        alert("Invalid Coupon Code");
+    }
+});
