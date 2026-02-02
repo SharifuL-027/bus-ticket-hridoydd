@@ -54,3 +54,7 @@ phoneNumberInput.addEventListener('keyup', function(e) {
 nextBtn.addEventListener('click', function() {
     successModal.showModal();
 });
+function selectSeat(seatId) {
+    const seatBtn = document.getElementById(seatId);
+    seatBtn.classList.add('bg-[#1DD100]', 'text-white');
+    seatBtn.classList.remove('bg-gray-100');
