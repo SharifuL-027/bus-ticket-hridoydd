@@ -8,6 +8,10 @@ const cartItemsContainer = document.getElementById('cart-items');
 const totalPriceEl = document.getElementById('total-price');
 const grandTotalEl = document.getElementById('grand-total');
 const couponInput = document.getElementById('coupon-code');
+const applyBtn = document.getElementById('apply-btn');
+const nextBtn = document.getElementById('next-btn');
+const phoneNumberInput = document.getElementById('phone-number');
+const successModal = document.getElementById('success-modal');
 
 for (const seat of allSeats) {
     seat.addEventListener('click', function() {
