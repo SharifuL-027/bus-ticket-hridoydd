@@ -102,3 +102,6 @@ function updateGrandTotal(amount) {
 function hideCouponSection() {
     document.getElementById('coupon-container').classList.add('hidden');
 }
+function validateForm() {
+    const phone = phoneNumberInput.value;
+    const hasSeats = selectedSeats.length > 0;
