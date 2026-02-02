@@ -58,3 +58,5 @@ function selectSeat(seatId) {
     const seatBtn = document.getElementById(seatId);
     seatBtn.classList.add('bg-[#1DD100]', 'text-white');
     seatBtn.classList.remove('bg-gray-100');
+    selectedSeats.push(seatId);
+}
