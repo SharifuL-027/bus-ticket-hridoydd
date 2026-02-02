@@ -66,4 +66,6 @@ function selectSeat(seatId) {
         <td class="py-2">Economy</td>
         <td class="py-2 text-right">${ticketPrice}</td>
     `;
+    cartItemsContainer.appendChild(row);
+    updateSummary();
 }
