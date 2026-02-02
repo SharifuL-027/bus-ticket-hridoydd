@@ -96,3 +96,6 @@ function updateSummary() {
     }
     validateForm();
 }
+function updateGrandTotal(amount) {
+    grandTotalEl.innerText = amount;
+}
