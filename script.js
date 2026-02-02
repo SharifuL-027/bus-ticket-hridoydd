@@ -89,4 +89,10 @@ function updateSummary() {
     const total = count * ticketPrice;
     totalPriceEl.innerText = total;
     grandTotalEl.innerText = total;
+    if (count > 0) {
+        applyBtn.removeAttribute('disabled');
+    } else {
+        applyBtn.setAttribute('disabled', true);
+    }
+    validateForm();
 }
